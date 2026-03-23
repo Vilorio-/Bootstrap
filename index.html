@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi proyecto Bootstrap</title>
+    <title>Sabor & Co.</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Probando Bootstrap</h1>
+
+    <!-- Jumbotron -->
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-3">
+            <h1 class="display-4">Sabor & Co.</h1>
+            <p class="lead">Comida fresca y sabores auténticos.</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- 3 párrafos en fila -->
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <h3>Ingredientes frescos</h3>
+                <p>Trabajamos con productores locales para garantizar la calidad de cada plato.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h3>Entrega rápida</h3>
+                <p>Pedidos entregados en menos de 30 minutos directamente a tu puerta.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h3>Precios justos</h3>
+                <p>Menús accesibles para todos sin sacrificar sabor ni calidad.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Lista de productos -->
+        <h2 class="my-4">Nuestro Menú</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <h5>Burger Clásica</h5>
+                <p>Carne de res, lechuga, tomate y queso.</p>
+                <a href="#" class="btn btn-primary">Ordenar</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <h5>Pizza Clasica</h5>
+                <p>Masa artesanal, salsa de tomate y mozzarella fresca.</p>
+                <a href="#" class="btn btn-primary">Ordenar</a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <h5>Tacos al Pastor</h5>
+                <p>Tortillas de maíz con carne marinada y salsa verde.</p>
+                <a href="#" class="btn btn-primary">Ordenar</a>
+            </div>
+        </div>
+
+    </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
