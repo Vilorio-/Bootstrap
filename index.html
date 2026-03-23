@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabor & Co.</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
     <!-- Jumbotron -->
-    <div class="p-5 mb-4 bg-light rounded-3">
-        <div class="container-fluid py-3">
+    <div class="jumbotron-custom">
+        <div class="container">
             <h1 class="display-4">Sabor & Co.</h1>
             <p class="lead">Comida fresca y sabores auténticos.</p>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container my-5">
 
         <!-- 3 párrafos en fila -->
         <div class="row">
@@ -36,27 +37,74 @@
 
         <hr>
 
-        <!-- Lista de productos -->
+        <!-- Productos con flex -->
         <h2 class="my-4">Nuestro Menú</h2>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="d-flex flex-wrap gap-3">
+
+            <div class="producto">
                 <h5>Burger Clásica</h5>
-                <p>Carne de res, lechuga, tomate y queso.</p>
+                <p>Carne de res, lechuga, tomate y queso cheddar.</p>
                 <a href="#" class="btn btn-primary">Ordenar</a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <h5>Pizza Clasica</h5>
+
+            <div class="producto">
+                <h5>Pizza Margherita</h5>
                 <p>Masa artesanal, salsa de tomate y mozzarella fresca.</p>
                 <a href="#" class="btn btn-primary">Ordenar</a>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
+
+            <div class="producto">
                 <h5>Tacos al Pastor</h5>
                 <p>Tortillas de maíz con carne marinada y salsa verde.</p>
                 <a href="#" class="btn btn-primary">Ordenar</a>
             </div>
+
         </div>
 
     </div>
+
+    <!-- Footer -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row">
+
+                <!-- Izquierda: Info del comercio -->
+                <div class="col-12 col-md-4 text-start">
+                    <h5>Sabor & Co.</h5>
+                    <address>
+                        Blvd. Morazán, Local 12<br>
+                        Tegucigalpa, Honduras<br>
+                        Tel: +504 2222-3333<br>
+                        <a href="mailto:info@saborco.com">info@saborco.com</a>
+                    </address>
+                </div>
+
+                <!-- Centro: Redes sociales -->
+                <div class="col-12 col-md-4 text-center">
+                    <h5>Síguenos</h5>
+                    <p>
+                        <a href="#">Facebook</a><br>
+                        <a href="#">Instagram</a><br>
+                        <a href="#">TikTok</a>
+                    </p>
+                </div>
+
+                <!-- Derecha: Info adicional -->
+                <div class="col-12 col-md-4 text-end">
+                    <h5>Horarios</h5>
+                    <p>
+                        Lunes a Viernes: 11am - 10pm<br>
+                        Sábados: 10am - 11pm<br>
+                        Domingos: 12pm - 9pm
+                    </p>
+                </div>
+
+            </div>
+
+            <hr style="border-color: #ff9800;">
+            <p class="text-center mb-0">© 2024 Sabor & Co. — Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
