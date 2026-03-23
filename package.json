@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "dev": "lite-server"
+},
   "repository": {
     "type": "git",
     "url": "git+https://adrianvilorio-admin@bitbucket.org/adrianvilorio/estudiar.git"
@@ -17,5 +18,13 @@
   "bugs": {
     "url": "https://bitbucket.org/adrianvilorio/estudiar/issues"
   },
-  "homepage": "https://bitbucket.org/adrianvilorio/estudiar#readme"
+  "homepage": "https://bitbucket.org/adrianvilorio/estudiar#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^4.0.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
