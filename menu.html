@@ -30,17 +30,119 @@
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                <li class="breadcrumb-item active">Menú</li>
-            </ol>
-        </nav>
-        <h1>Nuestro Menú</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- Banner carousel -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://placehold.co/1200x400?text=Promocion+2x1+en+Burgers" class="d-block w-100" alt="Promo 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://placehold.co/1200x400?text=Pizza+del+dia+%2411.99" class="d-block w-100" alt="Promo 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://placehold.co/1200x400?text=Delivery+gratis+hoy" class="d-block w-100" alt="Promo 3">
+        </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active">Menú</li>
+        </ol>
+    </nav>
+
+    <!-- Productos con flex y cards -->
+<h2 class="my-4">Nuestro Menú</h2>
+<div class="d-flex flex-wrap gap-3 justify-content-center">
+
+    <div class="card producto">
+        <img src="https://placehold.co/300x180?text=Burger" class="card-img-top" alt="Burger Clásica">
+        <div class="card-body">
+            <h5 class="card-title">Burger Clásica</h5>
+            <p class="card-text">Carne de res, lechuga, tomate y queso cheddar.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Ordenar</a>
+        </div>
+    </div>
+
+    <div class="card producto">
+        <img src="https://placehold.co/300x180?text=Pizza" class="card-img-top" alt="Pizza Margherita">
+        <div class="card-body">
+            <h5 class="card-title">Pizza Margherita</h5>
+            <p class="card-text">Masa artesanal, salsa de tomate y mozzarella fresca.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Ordenar</a>
+        </div>
+    </div>
+
+    <div class="card producto">
+        <img src="https://placehold.co/300x180?text=Tacos" class="card-img-top" alt="Tacos al Pastor">
+        <div class="card-body">
+            <h5 class="card-title">Tacos al Pastor</h5>
+            <p class="card-text">Tortillas de maíz con carne marinada y salsa verde.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Ordenar</a>
+        </div>
+    </div>
+
+</div>
+
+    <!-- Tabla responsive -->
+    <div class="table-responsive mt-4">
+        <table class="table table-bordered table-hover text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Plato</th>
+                    <th>Vegetariano</th>
+                    <th>Sin gluten</th>
+                    <th>Picante</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Burger Clásica</td>
+                    <td><span class="oi oi-x text-danger"></span></td>
+                    <td><span class="oi oi-x text-danger"></span></td>
+                    <td><span class="oi oi-x text-danger"></span></td>
+                    <td>$8.99</td>
+                </tr>
+                <tr>
+                    <td>Pizza Margherita</td>
+                    <td><span class="oi oi-check text-success"></span></td>
+                    <td><span class="oi oi-x text-danger"></span></td>
+                    <td><span class="oi oi-x text-danger"></span></td>
+                    <td>$11.99</td>
+                </tr>
+                <tr>
+                    <td>Tacos al Pastor</td>
+                    <td><span class="oi oi-x text-danger"></span></td>
+                    <td><span class="oi oi-check text-success"></span></td>
+                    <td><span class="oi oi-check text-success"></span></td>
+                    <td>$7.49</td>
+                </tr>
+                <tr>
+                    <td>Ensalada Caesar</td>
+                    <td><span class="oi oi-check text-success"></span></td>
+                    <td><span class="oi oi-check text-success"></span></td>
+                    <td><span class="oi oi-x text-danger"></span></td>
+                    <td>$6.99</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

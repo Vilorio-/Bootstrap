@@ -68,3 +68,21 @@
 body {
     padding-top: 70px;
 }
+
+/* Cards de productos */
+.producto {
+    width: 280px;
+    border: 1px solid #ffe0b2;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.producto .card-footer {
+    background-color: #fff8f0;
+    border-top: 1px solid #ffe0b2;
+}
+
+.producto .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
