@@ -32,6 +32,49 @@
     </div>
 </nav>
 
+<!-- Carousel -->
+<div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://placehold.co/1200x450/e65100/ffffff?text=Burger+Clasica" class="d-block w-100" style="height:450px; object-fit:cover;" alt="Burger Clásica">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Burger Clásica</h2>
+                <p>Carne 100% de res a la parrilla con ingredientes frescos</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://placehold.co/1200x450/bf360c/ffffff?text=Pizza+Margherita" class="d-block w-100" style="height:450px; object-fit:cover;" alt="Pizza Margherita">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Pizza Margherita</h2>
+                <p>Masa artesanal horneada en horno de piedra</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://placehold.co/1200x450/ff9800/ffffff?text=Tacos+al+Pastor" class="d-block w-100" style="height:450px; object-fit:cover;" alt="Tacos al Pastor">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Tacos al Pastor</h2>
+                <p>Receta tradicional con carne marinada en achiote y piña</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
     <!-- Jumbotron -->
     <div class="jumbotron-custom">
         <div class="container">
@@ -213,7 +256,7 @@
 
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         const popoverList = document.querySelectorAll('[data-bs-toggle="popover"]');
@@ -223,6 +266,13 @@
     <script>
     const tooltipList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     tooltipList.forEach(el => new bootstrap.Tooltip(el));
+</script>
+
+<script>
+    const carousel = new bootstrap.Carousel(document.getElementById('carouselPrincipal'), {
+        interval: 2500,
+        ride: 'carousel'
+    });
 </script>
 
 </body>
