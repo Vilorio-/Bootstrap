@@ -64,23 +64,59 @@
         <h2 class="my-4">Nuestro Menú</h2>
         <div class="d-flex flex-wrap gap-3">
 
-            <div class="producto">
-                <h5>Burger Clásica</h5>
-                <p>Carne de res, lechuga, tomate y queso cheddar.</p>
-                <a href="#" class="btn btn-primary">Ordenar</a>
-            </div>
+            <div class="card producto">
+    <img src="https://placehold.co/300x180?text=Burger" class="card-img-top" alt="Burger Clásica">
+    <div class="card-body">
+        <h5 class="card-title" 
+            data-bs-toggle="popover" 
+            data-bs-trigger="hover" 
+            data-bs-title="Burger Clásica" 
+            data-bs-content="Carne 100% de res, preparada a la parrilla con ingredientes frescos del día."
+            style="cursor:pointer">
+            Burger Clásica
+        </h5>
+        <p class="card-text">Carne de res, lechuga, tomate y queso cheddar.</p>
+    </div>
+    <div class="card-footer">
+        <a href="#" class="btn btn-primary">Ordenar</a>
+    </div>
+</div>
 
-            <div class="producto">
-                <h5>Pizza Margherita</h5>
-                <p>Masa artesanal, salsa de tomate y mozzarella fresca.</p>
-                <a href="#" class="btn btn-primary">Ordenar</a>
-            </div>
+<div class="card producto">
+    <img src="https://placehold.co/300x180?text=Pizza" class="card-img-top" alt="Pizza Margherita">
+    <div class="card-body">
+        <h5 class="card-title"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-title="Pizza Margherita"
+            data-bs-content="Masa artesanal horneada en horno de piedra con ingredientes importados de Italia."
+            style="cursor:pointer">
+            Pizza Margherita
+        </h5>
+        <p class="card-text">Masa artesanal, salsa de tomate y mozzarella fresca.</p>
+    </div>
+    <div class="card-footer">
+        <a href="#" class="btn btn-primary">Ordenar</a>
+    </div>
+</div>
 
-            <div class="producto">
-                <h5>Tacos al Pastor</h5>
-                <p>Tortillas de maíz con carne marinada y salsa verde.</p>
-                <a href="#" class="btn btn-primary">Ordenar</a>
-            </div>
+<div class="card producto">
+    <img src="https://placehold.co/300x180?text=Tacos" class="card-img-top" alt="Tacos al Pastor">
+    <div class="card-body">
+        <h5 class="card-title"
+            data-bs-toggle="popover"
+            data-bs-trigger="hover"
+            data-bs-title="Tacos al Pastor"
+            data-bs-content="Receta tradicional mexicana con carne marinada en achiote y piña fresca."
+            style="cursor:pointer">
+            Tacos al Pastor
+        </h5>
+        <p class="card-text">Tortillas de maíz con carne marinada y salsa verde.</p>
+    </div>
+    <div class="card-footer">
+        <a href="#" class="btn btn-primary">Ordenar</a>
+    </div>
+</div>
 
         </div>
 
@@ -175,8 +211,19 @@
     </div>
 </div>
 
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        const popoverList = document.querySelectorAll('[data-bs-toggle="popover"]');
+        popoverList.forEach(el => new bootstrap.Popover(el));
+    </script>
+
+    <script>
+    const tooltipList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipList.forEach(el => new bootstrap.Tooltip(el));
+</script>
+
 </body>
 </html>

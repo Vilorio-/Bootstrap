@@ -20,6 +20,7 @@
   },
   "homepage": "https://bitbucket.org/adrianvilorio/estudiar#readme",
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
     "jquery": "^4.0.0",
     "open-iconic": "^1.1.1",
