@@ -275,5 +275,36 @@
     });
 </script>
 
+
+<script>
+    const modalEl = document.getElementById('modalContacto');
+    const btnModal = document.querySelector('[data-bs-target="#modalContacto"]');
+
+    // Cuando comienza a abrirse
+    modalEl.addEventListener('show.bs.modal', () => {
+        console.log('Modal: comenzando a abrirse (show.bs.modal)');
+        btnModal.disabled = true;
+        btnModal.classList.remove('btn-primary');
+        btnModal.classList.add('btn-secondary');
+    });
+
+    // Cuando terminó de abrirse
+    modalEl.addEventListener('shown.bs.modal', () => {
+        console.log('Modal: totalmente abierto (shown.bs.modal)');
+    });
+
+    // Cuando comienza a ocultarse
+    modalEl.addEventListener('hide.bs.modal', () => {
+        console.log('Modal: comenzando a ocultarse (hide.bs.modal)');
+    });
+
+    // Cuando terminó de ocultarse
+    modalEl.addEventListener('hidden.bs.modal', () => {
+        console.log('Modal: totalmente oculto (hidden.bs.modal)');
+        btnModal.disabled = false;
+        btnModal.classList.remove('btn-secondary');
+        btnModal.classList.add('btn-primary');
+    });
+</script>
 </body>
 </html>
