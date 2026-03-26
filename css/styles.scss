@@ -1,0 +1,40 @@
+// Variables
+$amarillo: #ffeb3b;
+$rojo: #e65100;
+$verde: #4caf50;
+
+// Jumbotron
+.jumbotron-custom {
+    background-color: $amarillo;
+    border-bottom: 3px solid $rojo;
+    padding: 60px 40px;
+
+    h1 {
+        color: $rojo;
+    }
+
+    p {
+        color: #555;
+    }
+}
+
+// Mixin
+@mixin estilos-card {
+    margin: 10px;
+    padding: 20px;
+    background-color: $amarillo;
+    color: $rojo;
+    border: 2px solid $verde;
+}
+
+// Usando el mixin
+.producto {
+    @include estilos-card;
+    border-radius: 10px;
+    width: 280px;
+}
+
+.jumbotron-custom {
+    @include estilos-card;
+    padding: 60px 40px;
+}
