@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Sabor & Co.</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sabor & Co.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active">Nosotros</li>
+        </ol>
+    </nav>
+
+    <h1>Nosotros</h1>
+
+    <!-- COLLAPSE -->
+    <h4 class="mt-4">Nuestra Historia</h4>
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#historia">
+            Ver historia
+        </button>
+        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mision">
+            Ver misión
+        </button>
+    </p>
+
+    <div class="collapse mt-2" id="historia">
+        <div class="card card-body">
+            Sabor & Co. nació en 2015 con el sueño de ofrecer comida fresca y auténtica a toda la ciudad. Comenzamos con un pequeño local y hoy contamos con tres sucursales.
+        </div>
+    </div>
+
+    <div class="collapse mt-2" id="mision">
+        <div class="card card-body">
+            Nuestra misión es brindar una experiencia gastronómica memorable, usando ingredientes locales y recetas tradicionales con un toque moderno.
+        </div>
+    </div>
+
+    <!-- MULTI COLLAPSE -->
+    <h4 class="mt-5">Nuestros Valores</h4>
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".valores-collapse">
+            Ver / ocultar todos
+        </button>
+    </p>
+
+    <div class="collapse valores-collapse mt-2">
+        <div class="card card-body mb-2">
+            <strong>Calidad</strong> — Seleccionamos los mejores ingredientes frescos cada día.
+        </div>
+    </div>
+    <div class="collapse valores-collapse mt-2">
+        <div class="card card-body mb-2">
+            <strong>Compromiso</strong> — Nos dedicamos a superar las expectativas de cada cliente.
+        </div>
+    </div>
+    <div class="collapse valores-collapse mt-2">
+        <div class="card card-body mb-2">
+            <strong>Comunidad</strong> — Apoyamos a productores locales y causas sociales.
+        </div>
+    </div>
+
+    <hr class="mt-5">
+
+    <!-- ACCORDION -->
+    <h4 class="mt-4">Opciones de Pago</h4>
+    <div class="accordion mt-3" id="acordeonPago">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pago1">
+                    Tarjeta de crédito
+                </button>
+            </h2>
+            <div id="pago1" class="accordion-collapse collapse show" data-bs-parent="#acordeonPago">
+                <div class="accordion-body">
+                    Aceptamos Visa, Mastercard y American Express. Puedes pagar en hasta 12 cuotas sin interés con bancos seleccionados.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pago2">
+                    Transferencia bancaria
+                </button>
+            </h2>
+            <div id="pago2" class="accordion-collapse collapse" data-bs-parent="#acordeonPago">
+                <div class="accordion-body">
+                    Realiza tu transferencia a nuestra cuenta y envíanos el comprobante por WhatsApp. Procesamos el pedido en menos de 10 minutos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pago3">
+                    Efectivo
+                </button>
+            </h2>
+            <div id="pago3" class="accordion-collapse collapse" data-bs-parent="#acordeonPago">
+                <div class="accordion-body">
+                    Pagos en efectivo disponibles para entregas a domicilio y en nuestros locales. Aceptamos lempiras y dólares americanos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pago4">
+                    Pago móvil
+                </button>
+            </h2>
+            <div id="pago4" class="accordion-collapse collapse" data-bs-parent="#acordeonPago">
+                <div class="accordion-body">
+                    Aceptamos pagos por Tigo Money y otras billeteras digitales disponibles en Honduras.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

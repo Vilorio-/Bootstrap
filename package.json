@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
   "main": "index.js",
- "scripts": {
+"scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server",
     "scss": "sass css/:css/",
-    "build": "sass css/:css/ --style compressed"
+    "build": "sass css/:css/ --style compressed",
+    "copy": "copyfiles -u 1 css/*.css distri/css && copyfiles *.html distri && copyfiles -u 3 node_modules/bootstrap/dist/css/bootstrap.min.css distri/css && copyfiles -u 3 node_modules/bootstrap/dist/js/bootstrap.min.js distri/js",
+    "distri": "npm run build && npm run copy"
 },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "lite-server": "^2.6.1",
     "sass": "^1.98.0"
   }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Sabor & Co.</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sabor & Co.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner carousel -->
+<div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://placehold.co/1200x400?text=Promocion+2x1+en+Burgers" class="d-block w-100" alt="Promo 1">
+        </div>
+        <div class="carousel-item">
+            <img src="https://placehold.co/1200x400?text=Pizza+del+dia+%2411.99" class="d-block w-100" alt="Promo 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://placehold.co/1200x400?text=Delivery+gratis+hoy" class="d-block w-100" alt="Promo 3">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active">Menú</li>
+        </ol>
+    </nav>
+
+    <!-- Productos con flex y cards -->
+<h2 class="my-4">Nuestro Menú</h2>
+<div class="d-flex flex-wrap gap-3 justify-content-center">
+
+    <div class="card producto">
+        <img src="https://placehold.co/300x180?text=Burger" class="card-img-top" alt="Burger Clásica">
+        <div class="card-body">
+            <h5 class="card-title">Burger Clásica</h5>
+            <p class="card-text">Carne de res, lechuga, tomate y queso cheddar.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Ordenar</a>
+        </div>
+    </div>
+
+    <div class="card producto">
+        <img src="https://placehold.co/300x180?text=Pizza" class="card-img-top" alt="Pizza Margherita">
+        <div class="card-body">
+            <h5 class="card-title">Pizza Margherita</h5>
+            <p class="card-text">Masa artesanal, salsa de tomate y mozzarella fresca.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Ordenar</a>
+        </div>
+    </div>
+
+    <div class="card producto">
+        <img src="https://placehold.co/300x180?text=Tacos" class="card-img-top" alt="Tacos al Pastor">
+        <div class="card-body">
+            <h5 class="card-title">Tacos al Pastor</h5>
+            <p class="card-text">Tortillas de maíz con carne marinada y salsa verde.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn btn-primary">Ordenar</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Tabs -->
+<ul class="nav nav-pills mt-4" id="menuTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="tabla-tab" data-bs-toggle="tab" data-bs-target="#tabla" type="button">
+            Comparativa
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pago-tab" data-bs-toggle="tab" data-bs-target="#pago" type="button">
+            Opciones de pago
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="info-tab" data-bs-toggle="tab" data-bs-target="#info" type="button">
+            Información
+        </button>
+    </li>
+</ul>
+
+<div class="tab-content mt-3" id="menuTabsContent">
+
+    <!-- Tab 1: Tabla comparativa -->
+    <div class="tab-pane fade show active" id="tabla" role="tabpanel">
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Plato</th>
+                        <th>Vegetariano</th>
+                        <th>Sin gluten</th>
+                        <th>Picante</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Burger Clásica</td>
+                        <td><span class="oi oi-x text-danger"></span></td>
+                        <td><span class="oi oi-x text-danger"></span></td>
+                        <td><span class="oi oi-x text-danger"></span></td>
+                        <td>$8.99</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Margherita</td>
+                        <td><span class="oi oi-check text-success"></span></td>
+                        <td><span class="oi oi-x text-danger"></span></td>
+                        <td><span class="oi oi-x text-danger"></span></td>
+                        <td>$11.99</td>
+                    </tr>
+                    <tr>
+                        <td>Tacos al Pastor</td>
+                        <td><span class="oi oi-x text-danger"></span></td>
+                        <td><span class="oi oi-check text-success"></span></td>
+                        <td><span class="oi oi-check text-success"></span></td>
+                        <td>$7.49</td>
+                    </tr>
+                    <tr>
+                        <td>Ensalada Caesar</td>
+                        <td><span class="oi oi-check text-success"></span></td>
+                        <td><span class="oi oi-check text-success"></span></td>
+                        <td><span class="oi oi-x text-danger"></span></td>
+                        <td>$6.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Tab 2: Opciones de pago -->
+    <div class="tab-pane fade" id="pago" role="tabpanel">
+        <p class="mt-3">Aceptamos los siguientes métodos de pago:</p>
+        <ul>
+            <li><span class="oi oi-check text-success"></span> Efectivo</li>
+            <li><span class="oi oi-check text-success"></span> Tarjeta de crédito / débito</li>
+            <li><span class="oi oi-check text-success"></span> Transferencia bancaria</li>
+            <li><span class="oi oi-check text-success"></span> Pago móvil</li>
+        </ul>
+    </div>
+
+    <!-- Tab 3: Información -->
+    <div class="tab-pane fade" id="info" role="tabpanel">
+        <p class="mt-3">Realizamos entregas de lunes a domingo de 11am a 10pm. Los pedidos deben hacerse con al menos 30 minutos de anticipación. Para pedidos especiales contáctanos directamente.</p>
+    </div>
+
+</div>
+</div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
