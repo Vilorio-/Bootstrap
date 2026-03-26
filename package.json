@@ -8,7 +8,7 @@
     "dev": "lite-server",
     "scss": "sass css/:css/",
     "build": "sass css/:css/ --style compressed",
-    "copy": "copyfiles -u 1 css/*.css distri/css && copyfiles *.html distri && copyfiles -u 3 node_modules/bootstrap/dist/css/bootstrap.min.css distri/css && copyfiles -u 3 node_modules/bootstrap/dist/js/bootstrap.min.js distri/js",
+    "copy": "copyfiles -u 1 css/*.css distri/css && copyfiles *.html distri && copyfiles -u 4 node_modules/bootstrap/dist/css/bootstrap.min.css distri/css && copyfiles -u 4 node_modules/bootstrap/dist/js/bootstrap.min.js distri/js",
     "distri": "npm run build && npm run copy"
 },
   "repository": {
